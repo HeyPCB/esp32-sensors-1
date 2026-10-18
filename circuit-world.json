@@ -2,9 +2,16 @@
   "version": 1,
   "project": {
     "title": "HeyPCB ESP32-S3 Sensors 1: Climate & Light",
-    "summary": "ESP32-S3 boards, one sensor each: temperature, humidity, pressure, CO2, gas, thermocouples and light. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
+    "summary": "50 ESP32-S3 boards, one sensor each: temperature, humidity, pressure, CO2, gas, thermocouples and light. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
   },
   "boards": [
+    {
+      "slug": "am2302",
+      "path": "boards/am2302",
+      "title": "HeyPCB S3 AM2302",
+      "role": "Aosong AM2302 (DHT22) humidity and temperature module",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Aosong AM2302 (DHT22) humidity and temperature module. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
     {
       "slug": "apds9306",
       "path": "boards/apds9306",
@@ -18,6 +25,13 @@
       "title": "HeyPCB S3 BME280",
       "role": "Bosch BME280 pressure, humidity and temperature sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Bosch BME280 pressure, humidity and temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "bme680",
+      "path": "boards/bme680",
+      "title": "HeyPCB S3 BME680",
+      "role": "Bosch BME680 gas, pressure, humidity and temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Bosch BME680 gas, pressure, humidity and temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "bme688",
@@ -90,11 +104,39 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with NXP KTY82 silicon PTC temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "ldr",
+      "path": "boards/ldr",
+      "title": "HeyPCB S3 LDR",
+      "role": "GL5528 photoresistor light sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with GL5528 photoresistor light sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lm20",
+      "path": "boards/lm20",
+      "title": "HeyPCB S3 LM20",
+      "role": "TI LM20 analog temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI LM20 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lm75b",
+      "path": "boards/lm75b",
+      "title": "HeyPCB S3 LM75B",
+      "role": "NXP-style LM75B digital temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with NXP-style LM75B digital temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "lmt86",
       "path": "boards/lmt86",
       "title": "HeyPCB S3 LMT86",
       "role": "TI LMT86 analog temperature sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI LMT86 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lmt87",
+      "path": "boards/lmt87",
+      "title": "HeyPCB S3 LMT87",
+      "role": "LMT87 analog temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with LMT87 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "lps25hb",
@@ -111,6 +153,13 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Lite-On LTR-303ALS ambient light sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "max31855",
+      "path": "boards/max31855",
+      "title": "HeyPCB S3 MAX31855",
+      "role": "Maxim MAX31855K K-thermocouple converter",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Maxim MAX31855K K-thermocouple converter. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "max31856",
       "path": "boards/max31856",
       "title": "HeyPCB S3 MAX31856",
@@ -118,11 +167,25 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Maxim MAX31856 universal thermocouple converter. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "max6675",
+      "path": "boards/max6675",
+      "title": "HeyPCB S3 MAX6675",
+      "role": "Maxim MAX6675 K-thermocouple converter",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Maxim MAX6675 K-thermocouple converter. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "mcp9700",
       "path": "boards/mcp9700",
       "title": "HeyPCB S3 MCP9700",
       "role": "Microchip MCP9700 analog temperature sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Microchip MCP9700 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "mcp9701",
+      "path": "boards/mcp9701",
+      "title": "HeyPCB S3 MCP9701A",
+      "role": "Microchip MCP9701A analog temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Microchip MCP9701A analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "mcp9808",
@@ -137,6 +200,41 @@
       "title": "HeyPCB S3 MPL3115A2",
       "role": "NXP MPL3115A2 precision altimeter",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with NXP MPL3115A2 precision altimeter. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ms5607",
+      "path": "boards/ms5607",
+      "title": "HeyPCB S3 MS5607",
+      "role": "TE MS5607 barometric pressure sensor (10 cm altimeter)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TE MS5607 barometric pressure sensor (10 cm altimeter). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ms5837",
+      "path": "boards/ms5837",
+      "title": "HeyPCB S3 MS5837",
+      "role": "TE MS5837-30BA waterproof pressure / depth sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TE MS5837-30BA waterproof pressure / depth sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ntc",
+      "path": "boards/ntc",
+      "title": "HeyPCB S3 NTC",
+      "role": "Murata 10k NTC thermistor temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Murata 10k NTC thermistor temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "scd40",
+      "path": "boards/scd40",
+      "title": "HeyPCB S3 SCD40",
+      "role": "Sensirion SCD40 photoacoustic CO2 sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Sensirion SCD40 photoacoustic CO2 sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "scd41",
+      "path": "boards/scd41",
+      "title": "HeyPCB S3 SCD41",
+      "role": "Sensirion SCD41 photoacoustic CO2 sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Sensirion SCD41 photoacoustic CO2 sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "sht30",
@@ -249,6 +347,13 @@
       "title": "HeyPCB S3 TMP20",
       "role": "TI TMP20 analog temperature sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI TMP20 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "tmp235",
+      "path": "boards/tmp235",
+      "title": "HeyPCB S3 TMP235",
+      "role": "TI TMP235 analog temperature sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI TMP235 analog temperature sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     }
   ]
 }
